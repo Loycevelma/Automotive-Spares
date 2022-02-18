@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.automotiveapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutomotiveApp">
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivityNotification"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivityUpdateProducts"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivityComppleteOrders"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivityPendingOrders"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivitySellerWorkingHours"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySellerLocation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivitySellerResetPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivitySellerLogin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivitySellerVerification"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityCategories"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Seller.ActivitySellerSignUp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerRstPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityNavigation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityPaymentSuccessfull"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityPaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerDeliveryMethod"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerLogin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerVerification"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerSignUp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerViewCart"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerProducts"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.ActivityBuyerLocation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automotiveapp.Buyer.BuyerStartActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.automotiveapp.Buyer.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

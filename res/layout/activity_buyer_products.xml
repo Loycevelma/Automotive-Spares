@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.automotiveapp.Buyer.ActivityBuyerProducts">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:background="@color/white"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"/>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav">
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="630dp"
+            android:text="Checkout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="396dp"
+        android:layout_height="629dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnCheckout"-->
+    <!--        android:layout_width="313dp"-->
+    <!--        android:layout_height="46dp"-->
+    <!--        android:text="Checkout"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/recycler_cart"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/frame_layout" />-->
+
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?actionBarSize"-->
+<!--        android:background="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?actionBarSize">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imgBackButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="?actionBarSize"-->
+<!--                android:layout_marginStart="125dp"-->
+<!--                android:layout_toEndOf="@+id/imgBackButton"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:paddingStart="50dp"-->
+<!--                android:text="Products"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+<!--        </RelativeLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+<!--    <GridLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:columnCount="2"-->
+<!--        android:rowCount="3"-->
+<!--        android:layout_marginTop="50dp">-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvInstructor1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/wipper_removebg_preview" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginBottom="40dp"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Wipers"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="70dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Pushes water, or snow,off the surface oF a screen."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btnadd1"-->
+<!--                    android:layout_width="158dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="40dp"-->
+<!--                    android:layout_marginTop="200dp"-->
+<!--                    android:backgroundTint="#B3AA0909"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Add to Cart" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvInstructor2"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/bearings_removebg_preview" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvName2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginBottom="40dp"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Bearings"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="67dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="It enables the wheel to rotate smoothly with a minimum offriction."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btnadd2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="40dp"-->
+<!--                    android:layout_marginTop="200dp"-->
+<!--                    android:backgroundTint="#B3AA0909"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Add to Cart" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvInstructor3"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/body_trim_removebg_preview" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvName3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginBottom="40dp"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Body trim"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="used to protect the car from  damage that can be caused by surrounding vehicles in a parking lot.."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="10sp" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btnAdd3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="40dp"-->
+<!--                    android:layout_marginTop="200dp"-->
+<!--                    android:backgroundTint="#B3AA0909"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Add to Cart" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cvInstructor4"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardElevation="8dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="8dp">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/coolant_bottle_removebg_preview" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvName4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginBottom="40dp"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Coolant Bottle"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="?actionBarSize"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="Used to help cool the air in a vehicle."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/btnAdd4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="40dp"-->
+<!--                    android:layout_marginTop="200dp"-->
+<!--                    android:backgroundTint="#B3AA0909"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingStart="30dp"-->
+<!--                    android:text="Add to Cart" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </GridLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
